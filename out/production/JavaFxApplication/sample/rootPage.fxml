@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerRootPage">
+   <top>
+      <AnchorPane prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="76.0" fitWidth="92.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/iconeRegisters.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="157.0" layoutY="27.0" text="Pagina do Administrador" textFill="RED">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="editUsersButton" layoutX="58.0" layoutY="92.0" mnemonicParsing="false" onAction="#editUsersButtonOnAction" prefHeight="36.0" prefWidth="484.0" style="-fx-background-color: black;" text="Úsuario" textFill="WHITE" />
+            <Button layoutX="58.0" layoutY="146.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="484.0" style="-fx-background-color: black;" text="Filmes" textFill="WHITE" />
+            <Button layoutX="58.0" layoutY="200.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="484.0" style="-fx-background-color: black;" text="Estatísticas" textFill="WHITE" />
+            <Button layoutX="58.0" layoutY="256.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="484.0" style="-fx-background-color: black;" text="Sair" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
